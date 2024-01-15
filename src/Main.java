@@ -82,7 +82,7 @@ public class Main {
     }
 
 
-    public static int calculate(int num1, char operator, int num2) throws Exception {
+    public static int calculate(int num1, char operator, int num2) {
 
         if (operator == '+'){
             result = num1 + num2;
@@ -112,7 +112,6 @@ public class Main {
             "LXXXVII", "LXXXVIII", "LXXXIX", "XC", "XCI", "XCII", "XCIII", "XCIV", "XCV" ,"XCVI" ,"XCVII","XCVIII","XCIX","C"};
 
     static String [] arabian = new String[]{"0","1","2","3","4","5","6","7","8","9","10"};
-    static String [] exception = new String[]{"-","+","*","/"};
 
     static void intToRoman(int num) {
         for(int i = 1; i<roman2.length; i++){
