@@ -54,7 +54,7 @@ public class Main {
         } else if (!compareRoman(number1) && !compareRoman(number3)) {
             num1 = Integer.parseInt(number1);
             num2 = Integer.parseInt(number3);
-            if (num1 == 0 || num2 == 0) {
+            if (num1 == 0 || num2 == 0 || num1 > 10 || num2 > 10) {
                 throw new Exception("Числа должны быть от 1 до 10");}
             int resultatArabian = calculate(num1, operator, num2);
             System.out.println("Ответ:" + resultatArabian);
